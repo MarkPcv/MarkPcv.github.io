@@ -107,7 +107,7 @@ p{
   text-align: center;
 }
 
-.post-author, .about-author img{
+.post-author img, .about-author img{
   border-radius: 50%;
 }
 
