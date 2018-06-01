@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="robotic.png" />
+    <title>H.A.R.M.</title>
+  </head>
+  <body>
+    <div class ="header">
+      <p id="title">MECHENG 706</p>
+      <p id="degree">BE Mechatronics Engineering</p>
+    </div>
+    <div class="topnav">
+      <p style="font-family: 'times new roman';font-size: 20px; font-style: italic; float: left; padding: 5px 20px 5px 50px" > "Intelligence is the ability to adapt to change"</p>
+      <ul>
+      <li><a href="index.html" title="Home Webpage"> Home </a></li>
+	  <li><a href="summary.html" title="Design Summary"> Summary </a></li>
+      <li><a href="robot.html" title="Robot Features and Demos"> Robot </a></li>
+    </ul>
+    </div>
+
+	<!-- Design Sumarry -->
+    <div class="summary">
+		<br>
+      <h1 class = "summary_header"> Design Summary </h1>
+      <br>
+
+      <p class = "summary_content"> To create an effective and autonomous robot, different subsystems of the robot were made to utilise the various sensors and hardware components made available.
+							Armed with the following, H.A.R.M. integrates sensory input to provide intelligent actuation and perform autonomous navigation, collision avoidance and fire extinguishing.
+      </p>
+	  <br>
+	  <br>
+	 </div>
+	 <div class="summary">
+	  <br>
+	  <br>
+	  <br>
+	  <h2 class = "summary_subheader"> Hardware Components </h2>
+	  <br>
+
+	 <img  src = "./summary/robot.jpg" style="width: 100% ; height: 250px; position: absolute; width: 600px ; height: auto;	margin: 350px 350px; display:block; border-radius: 400px; border: 2px solid #cc6600">
+
+
+	  <!-- Using Diagram -->
+	  <div class = "img_container" style="border-radius:80px; width: 260px; height:250px ;  margin-left: 100px ;margin-top:50px">
+		<img class = "summary_pic" src = "./summary/wheel.jpg" style="width: 100% ; height: 250px ;display:block;  ">
+		<div class = "overlay">
+			<br>
+			<h3 class = "img_list">  Mecanum Wheels </h3>
+			<br>
+			<p class = "img_text">With multiple free-moving rollers attached at 45� angles, Mecanum wheels are an effective means for achieving omnidirectional motion.
+									By controlling the output to each wheel forwards, backwards, rotational and strafing movements can be achieved.  </p>
+		</div>
+	  </div>
+
+	  <div class = "img_container" style="border-radius:80px; width: 250px; height:250px ; position: relative; margin-left: 150px;">
+		<img class = "summary_pic" src = "./summary/arduino.jpg" style="width: 100% ; height: 250px  ">
+		<div class = "overlay">
+			<br>
+			<h3 class = "img_list"> Arduino board </h3>
+			<br>
+			<p class = "img_text">The brains of the operation, the Arduino takes measurements from the connected sensors and uses a finite state machine
+									and behavioural control logic to identify the correct course of action.  </p>
+		</div>
+	  </div>
+
+	  <div class = "img_container" style="border-radius:90px; width: 300px; height:250px; position: relative; margin-left: 150px; margin-top: 50px">
+		<img class = "summary_pic" src = "./summary/mpu.jpg" style="width: 100% ; height: 250px  ">
+		<div class = "overlay">
+			<br>
+			<h3 class = "img_list" style="padding-left:15px;"> Motion Processing Unit (MPU9250) </h3>
+			<br>
+			<p class = "img_text">A 9DOF inertial measurement unit that consists of a 3-axis gyroscope, 3-axis accelerometer, 3-axis magnetometer and an on-board digital motion processor (DMP).
+									Sensor fusion is used to combine measurements and continuously provide H.A.R.M�s heading/yaw angle in the arena for localisation making turns.  </p>
+		</div>
+	  </div>
+
+
+
+
+
+	  <div class = "img_container" style="border-radius:100px; height:250px; width:250px; position: relative; margin-left: 50px; margin-top: 150px">
+		<img class = "summary_pic" src = "./summary/fan.jpg" style="width: 100% ; height: 250px  ">
+		<div class = "overlay">
+			<br>
+			<h3 class = "img_list" style="padding-left:0px;"> Electric Fan </h3>
+			<br>
+			<p class = "img_text"> H.A.R.M. keeps his cool when placed in front of a fire by activating a 5V DC electric fan connected to one of the Arduino�s digital output pins.
+									Placed in a custom 3D printed bracket, the fan is placed at an optimal height and kept on until the fire has been eradicated.  </p>
+		</div>
+	  </div>
+
+
+	  <div class = "img_container" style="border-radius:50px; height:250px; width: 225px; position: relative; margin-left: 700px; margin-top: 50px">
+		<img class = "summary_pic" src = "./summary/photo.jpg" style="width: 100% ; height: 250px  ">
+		<div class = "overlay">
+			<br>
+			<h3 class = "img_list" style="padding-left:0px;"> Phototransistors </h3>
+			<br>
+			<p class = "img_text">Capable of detecting close light sources, 2 large phototransistors and 2 small phototransistors are used to determine if any fires are present in close proximity to the robot.
+									They are the fire-fighting eyes of the robot.  </p>
+		</div>
+	  </div>
+
+
+	  <div class = "img_container" style="border-radius:80px; width: 350px; height:250px; position: relative; margin-left: 200px; margin-top: 100px ;margin-bottom: 50px">
+		<img class = "summary_pic" src = "./summary/irsonar.jpg" style="width: 100% ; height: 250px  ">
+		<div class = "overlay">
+			<br>
+			<h3 class = "img_list" style="padding-left:0px;"> Proximity Sensors: SONAR + Infrared </h3>
+			<br>
+			<p class = "img_text">Tested at a range of distances, H.A.R.M.�s non-contact, ultrasonic Sonar sensor was found to have an accurate working range between approximately 7cm and 80cm.
+		The short range IR sensors were found to produce reliable readings between 5-30cm and for the medium range, 5-80cm. These proximity sensors form the eyes of the robot and allow obstacle identification and distinguishing.
+		  </p>
+		</div>
+	  </div>
+
+
+
+		<div class = "img_container" style="border-radius:100px; height:250px; width:300px;position: relative; margin-left: 200px; margin-top: 100px; margin-right: 200px ;margin-bottom: 50px">
+			<img class = "summary_pic" src = "./summary/servo.jpg" style="width: 100% ; height: 250px  ">
+			<div class = "overlay">
+				<br>
+				<h3 class = "img_list" style="padding-left:0px;"> Servo </h3>
+				<br>
+				<p class = "img_text"> Capable of rotating 180�, the servo is controlled using PWM. Mounting the phototransistors and fan on the servo allows H.A.R.M. to scan his environment and catch any wild-fire situations that require immediate assistance.
+										Control to the servo is adjusted when a light source is detected so that continuous fire tracking can take place.  </p>
+			</div>
+		</div>
+
+	</div>
+	<div class="summary">
+	<br>
+	<div style="display:block; position:relative; margin: 0px 50px 0px 0px;">
+
+		 <br>
+	  <br>
+      <h1 class = "summary_subheader" > Physical Design </h1>
+      <br>
+		<p class = "summary_content"> Several proximity sensors are placed at the front to enable detection and distinguishing of obstacles and walls while two are also placed on
+							the left side so that H.A.R.M. is able to align himself to the wall and reestablish his position.  </p>
+		<br>
+		<br>
+		</div>
+	<img class = "robot_img" src = "./robot/placement.png" style="width: 300px ; height: auto; margin: 10px auto 50px ; " >
+
+    </div>
+	</body>
+</html>
